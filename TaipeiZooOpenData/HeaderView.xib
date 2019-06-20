@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="TaipeiZooOpenData" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="kdV-h9-vdw" id="ILc-rK-Q48"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fog" translatesAutoresizingMaskIntoConstraints="NO" id="BYX-FJ-5hn">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdV-h9-vdw">
+                    <rect key="frame" x="176.5" y="813" width="61.5" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-RY-F2D">
+                    <rect key="frame" x="40" y="765" width="334" height="29"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BYX-FJ-5hn" secondAttribute="trailing" id="22x-yk-sWY"/>
+                <constraint firstItem="kdV-h9-vdw" firstAttribute="top" secondItem="mGo-RY-F2D" secondAttribute="bottom" constant="20" id="7B5-Ul-Xbz"/>
+                <constraint firstItem="BYX-FJ-5hn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="97n-ab-XaQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BYX-FJ-5hn" secondAttribute="bottom" id="GUS-X6-ecp"/>
+                <constraint firstItem="mGo-RY-F2D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="OSo-4L-qDE"/>
+                <constraint firstItem="BYX-FJ-5hn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bia-VP-biP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kdV-h9-vdw" secondAttribute="bottom" constant="20" id="q0F-AP-ewX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mGo-RY-F2D" secondAttribute="trailing" constant="40" id="vKS-6o-tYJ"/>
+                <constraint firstItem="kdV-h9-vdw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wDo-s9-enY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fog" width="1920" height="1280"/>
+    </resources>
+</document>
